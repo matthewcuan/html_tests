@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Cuan's Survey Form</h1>
+    <p id="description">This is a description of the form</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" placeholder="John Doe" required /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="johndoe@fcc.org" required /></label>
+        <label for="number" id="number-label">Enter Your Age: <input id="number" name="number" type="number" min="13" max="99" placeholder="..." required /></label>
+</fieldset>
+<fieldset>
+        <label id="question">Where did you hear about us?<select id="dropdown" >
+          <option value="">(select one)</option>
+            <option value="social media">Social media</option>
+            <option value="word of mouth">Word of mouth</option>
+        </select>
+        <label id="question">Are you a student or a teacher?</label>
+        <label for="role"><input id="teacher" type="radio" name="role" value="teacher" class="inline">Teacher</label>
+        <label for="role"><input id="student" type="radio" name="role" value="student" class="inline">Student</label>
+        <label id="question">What are your interests?</label>
+        <label><input id="science" value="science" type="checkbox" name="interests">Science</label>
+        <label><input id="Arts" value="arts" type="checkbox" name="interests">Arts</label>
+        <label id="question">Tell us about yourself:<textarea id="bio" name="bio" rows="3" cols="auto" placeholder="I like coding on the beach..."></textarea></label>
+
+        
+      </fieldset>
+      <input id="submit" type="submit"
+    </form>
+  </body>
